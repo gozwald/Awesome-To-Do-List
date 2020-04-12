@@ -7,14 +7,19 @@ body {
     height: 100%;
 }
 
-.container {
+
+  .midcontainer {
+      z-index: auto;
+  }
+
+    .container {
+
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     overflow: auto;
-    background: lime;
     text-align: center;
 }
 
@@ -27,6 +32,12 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.flex {
+    display: flex;
+}
+
+.flex2 {
+    display: flex;
 }
 
 .header {
@@ -37,37 +48,47 @@ body {
     background-color: darkslategrey;
 }
 
-.flex {
-    display: flex;
-}
-
 .bg1 {
-    background: rgb(255, 255, 255);
-    ) background: radial-gradient(circle, rgba(255, 255, 255, 1) 42%, rgba(161, 229, 217, 1) 100%);
+
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 42%, rgba(161, 229, 217, 1) 100%);
 }
 
 .bg2 {
     background-color: #f00
 }
 
+
 #bg-img1 {
-    background: rgb(205, 233, 244);
+
     background: linear-gradient(90deg, rgba(205, 233, 244, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(205, 233, 244, 1) 100%);
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
 }
 
+
 #bg-img2 {
-    background: rgb(205, 233, 244);
+
     background: linear-gradient(90deg, rgba(205, 233, 244, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(205, 233, 244, 1) 100%);
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
 }
 
 #bg-img3 {
-    background: rgb(205, 233, 244);
+
     background: linear-gradient(90deg, rgba(205, 233, 244, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(205, 233, 244, 1) 100%);
+    width: 50vw;
+    justify-content: center;
+    align-items: center;    
 }
 
 #bg-img4 {
-    background: rgb(205, 233, 244);
+
     background: linear-gradient(90deg, rgba(205, 233, 244, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(205, 233, 244, 1) 100%);
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
 }
 
 .grow {
