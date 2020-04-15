@@ -1,0 +1,89 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    height: 100%;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    background: lime;
+    text-align: center;
+}
+
+.container > img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 15vh;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+}
+
+.header {
+    background-color: darkslategrey;
+}
+
+.footer {
+    background-color: darkslategrey;
+}
+
+.flex {
+    display: flex;
+}
+
+.bg1 {
+    background: rgb(255, 255, 255);
+    ) background: radial-gradient(circle, rgba(255, 255, 255, 1) 42%, rgba(161, 229, 217, 1) 100%);
+}
+
+.bg2 {
+    background-color: #f00
+}
+
+#bg-img1 {
+    border-style: outset; border-width: 2px;
+    background: rgb(205, 233, 244);
+    background: linear-gradient(90deg, rgba(205, 233, 244, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(205, 233, 244, 1) 100%);
+}
+
+#bg-img2 {
+    border-style: outset; border-width: 2px;
+    background: rgb(226,216,236);
+background: linear-gradient(90deg, rgba(226,216,236,1) 0%, rgba(255,255,255,1) 50%, rgba(226,216,236,1) 100%);
+}
+
+#bg-img3 {
+    border-style: outset; border-width: 2px;
+    background: rgb(241,236,191);
+background: linear-gradient(90deg, rgba(241,236,191,1) 0%, rgba(255,255,255,1) 50%, rgba(241,236,191,1) 100%);
+}
+
+#bg-img4 {
+    border-style: outset; border-width: 2px;
+    background: rgb(105,104,100);
+    background: linear-gradient(90deg, rgba(105,104,100,1) 0%, rgba(255,255,255,1) 50%, rgba(105,104,100,1) 100%);
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.dir-col {
+    flex-direction: column;
+}
+
+.dir-row {
+    flex-direction: row;}
+
+.category h2 {    font-family: 'Russo One', sans-serif;  font-size: 1.2em; text-transform: uppercase; }
+.category img { height: 15vh; }
