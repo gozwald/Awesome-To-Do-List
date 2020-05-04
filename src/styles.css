@@ -112,8 +112,10 @@ body {
 
 
 
+
 .flex {
     display: flex;
+
 }
 
 .flex2 {
@@ -145,6 +147,7 @@ body {
 
 #bg-img1 {
 
+
     background-image: url("/Awesome-To-Do-List/src/img/bg-1.png");
     width: 50vw;
     justify-content: center;
@@ -153,6 +156,7 @@ body {
     transition: opacity .25s ease-in-out;
    -moz-transition: opacity .25s ease-in-out;
    -webkit-transition: opacity .25s ease-in-out; */
+
 }
 
 /* #bg-img1:hover {
@@ -161,6 +165,7 @@ body {
 } */
 
 #bg-img2 {
+
     
     background-image: url("/Awesome-To-Do-List/src/img/bg-2.png");
     width: 50vw;
@@ -182,6 +187,7 @@ body {
     width: 50vw;
     justify-content: center;
     align-items: center;
+
 }
 
 .grow {
@@ -249,3 +255,4 @@ body {
   }
 
  
+
