@@ -7,12 +7,99 @@ body {
     height: 100%;
 }
 
+.flexcol {
+    display: flex;
+    flex-direction: row;
+    height: 71vh;
+    font-family: 'Hammersmith One', sans-serif;
+    font-weight: 1000;
+    font-size: 7vh;
+}
 
-  .midcontainer {
-      z-index: auto;
+.flexcolbox {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: justify;
+}
+
+.flexcolbox2 {
+    display: flex; 
+    flex-direction: column;
+    text-align: left;
+    margin: 40px 8%;
+    font-family: 'Hammersmith One', sans-serif;
+    font-weight: 1000;
+    font-size: 3vh;
+    
+}
+
+.flexrow {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexrow img {
+    height: 6vh;
+
+
+}
+
+.navbar {
+    height: 7vh;
   }
 
-    .container {
+.smnavbox {
+
+    width: 25vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 0.7rem solid rgb(17, 0, 255);
+    border-style: outset;
+
+  }
+
+@media (min-width: 1000px) {
+  #midmobile {
+      display: none;
+  }
+
+  #midfull {
+      display: block;
+
+  } 
+
+  
+
+}
+
+@media (max-width: 1000px) {
+    #midmobile {
+        display: block;
+    }
+  
+    #midfull {
+        display: none;
+    } 
+  
+  }
+
+  #midfull {
+      height: 86vh;
+  }
+
+
+
+
+#midmobile img {
+    height: 17vh;
+}
+
+.contain {
 
     position: fixed;
     top: 0;
@@ -23,14 +110,7 @@ body {
     text-align: center;
 }
 
-.container>img {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    height: 20vh;
-    /* bring your own prefixes */
-    transform: translate(-50%, -50%);
-}
+
 
 .flex {
     display: flex;
@@ -45,7 +125,12 @@ body {
 }
 
 .footer {
+    display: flex;
     background-color: darkslategrey;
+    height: 7vh; 
+    justify-content: center;
+    align-items: center;
+    color: lavender;
 }
 
 .bg1 {
@@ -60,16 +145,24 @@ body {
 
 #bg-img1 {
 
-    background: linear-gradient(90deg, rgba(205, 233, 244, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(205, 233, 244, 1) 100%);
+    background-image: url("/Awesome-To-Do-List/src/img/bg-1.png");
     width: 50vw;
     justify-content: center;
     align-items: center;
+    /* opacity: 1;
+    transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out; */
 }
 
+/* #bg-img1:hover {
+
+    opacity: 0.6;
+} */
 
 #bg-img2 {
-
-    background: linear-gradient(90deg, rgba(205, 233, 244, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(205, 233, 244, 1) 100%);
+    
+    background-image: url("/Awesome-To-Do-List/src/img/bg-2.png");
     width: 50vw;
     justify-content: center;
     align-items: center;
@@ -77,7 +170,7 @@ body {
 
 #bg-img3 {
 
-    background: linear-gradient(90deg, rgba(205, 233, 244, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(205, 233, 244, 1) 100%);
+    background-image: url("/Awesome-To-Do-List/src/img/bg-3.png");
     width: 50vw;
     justify-content: center;
     align-items: center;    
@@ -85,7 +178,7 @@ body {
 
 #bg-img4 {
 
-    background: linear-gradient(90deg, rgba(205, 233, 244, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(205, 233, 244, 1) 100%);
+    background-image: url("/Awesome-To-Do-List/src/img/bg-4.png");
     width: 50vw;
     justify-content: center;
     align-items: center;
@@ -94,3 +187,65 @@ body {
 .grow {
     flex-grow: 1;
 }
+
+
+.modal-window {
+    position: fixed;
+    background-color: rgba(155, 155, 155, 0.75);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .modal-window:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .modal-window>div {
+
+    position: absolute;
+    background-color: white;
+    border-radius: 25px;
+    width: 70%;
+    height: 70%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    color: #444;
+  }
+  
+  .modal-window header {
+    font-weight: bold;
+  }
+  
+  .modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+  }
+  
+  .modal-close:hover {
+    color: #000;
+  }
+  
+  .modal-window h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+  }
+
+ 
