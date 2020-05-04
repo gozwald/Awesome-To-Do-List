@@ -3,46 +3,111 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="src/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./src/styles.css" />
      <title>Awesome ToDo List</title>
-  </head>
-  <body>
-    <div class="container" style="min-height:100vh;">
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
-        <img src="./src/img/avatar.png">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+         </head>
+         <body>
+             <div class="contain" style="min-height:100vh;">
+       
+                 <div style="height: 7vh; background-color: #4e4e4e;">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <a class="navbar-brand" href="#">Awesome TODO</a>
+                        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown"> -->
+                          <ul class="navbar-nav">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
 
 
-        <div class="" style="height:7vh;background-color: #4e4e4e">header</div>
-      
-      
-
-        <div class="category  flex" style="height: 43vh; flex-direction: row;">
-            
-          <div id="bg-img1" class="flex grow dir-col" style="width: 50vw;justify-content: center;align-items: center; "><img src="./src/img/symbol-grocery.png"><h2>grocery list</h2></div>
-          <div id="bg-img2" class="flex grow dir-col" style="width: 50vw;justify-content: center;align-items: center;"><img src="./src/img/symbol-websites.png"><h2>review URLs</h2></div>
-
-      </div>
-        <div class="category flex" style="height: 43vh; flex-direction: row;">
-            
-          <div id="bg-img3" class="flex grow dir-col" style="width: 50vw;justify-content: center;align-items: center; "><img src="./src/img/symbol-general.png"><h2>general todo</h2></div>
-          <div id="bg-img4" class="flex grow dir-col" style="width: 50vw;justify-content: center;align-items: center;"><img src="./src/img/symbol-bucket.png"><h2>bucket list</h2></div>
-
-
-      </div>
-
-
-      
-        <div class="" style="height:7vh;background-color: #4e4e4e;">footer</div>
-
-
-      </div>
-  </body>
-
-</html>
+                          </ul>
+                        <!-- </div> -->
+                      </nav>
+                </div>
+                 <div id="midmobile">
+                <!-- <img src="./src/img/avatar.png"> -->
+                     
+                     <div class="flex" style="height: 86vh; flex-wrap: wrap; overflow: hidden;">
+                          <div id="bg-img1" class="flex grow">
+                            <a href="#open-modal"><h2>Grocery List</h2><br><br><img src="src/img/symbol-grocery.png" alt=""></a>
+                            <div id="open-modal" class="modal-window">
+                                <div>
+                                  <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+                                  <h1>Review urls</h1>
+                                  <div>yaddaaayadaaaaaaa</div>
+                                </div>
+                              </div></div>
+                         <div id="bg-img2" class="flex grow">
+                            <a href="#open-modal2"><h2>Website List</h2><br><br><img src="src/img/symbol-websites.png" alt=""></h3></a>
+                            <div id="open-modal2" class="modal-window">
+                                <div>
+                                  <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+                                  <h1>CSS Modal</h1>
+                                  <div>yaddaaayadaaaaaaa</div>
+                                </div>
+                              </div>
+                         </div>
+                         <div id="bg-img3" class="flex grow">
+                          <a href="#open-modal3"><h2>Bucket List</h2><br><br><img src="src/img/symbol-bucket.png" alt=""></h3></a>
+                          <div id="open-modal3" class="modal-window">
+                              <div>
+                                <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+                                <h1>CSS Modal</h1>
+                                <div>yaddaaayadaaaaaaa</div>
+                              </div>
+                            </div>
+                       </div>
+                       <div id="bg-img4" class="flex grow">
+                        <a href="#open-modal4"><h2>General List</h2><br><br><img src="src/img/symbol-general.png" alt=""></h3></a>
+                        <div id="open-modal4" class="modal-window">
+                            <div>
+                              <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+                              <h1>Grocery List</h1>
+                              <div>yaddaaayadaaaaaaa</div>
+                            </div>
+                          </div>
+                     </div>
+                        </div>
+                 </div>
+                 <div id="midfull">
+                   <div class="flexrow">
+                 <a href="grocery.html"><div class="smnavbox" style="background-image: url(/src/img/bg-1.png)"><h4>Grocery List</h4><img src="src/img/symbol-grocery.png" alt=""></div></a>
+                 <a href="website.html"><div class="smnavbox" style="background-image: url(/src/img/bg-2.png)"><h4>Website List</h4><img src="src/img/symbol-websites.png" alt=""></div></a>
+                 <a href="Bucket.html"><div class="smnavbox" style="background-image: url(/src/img/bg-3.png)"><h4>Bucket List</h4><img src="src/img/symbol-bucket.png" alt=""></div></a>
+                 <a href="index.html"><div class="smnavbox" style="background-image: url(/src/img/bg-4.png)"><h4>General List</h4><img src="src/img/symbol-general.png" alt=""></div></a>
+                  </div>
+                  <div class="flexcol">
+                      
+                      <div class="flexcolbox" style="width: 30vw; background-color: rgba(235, 235, 235, 0.377);">Get.<br>Shit. Done.</div>
+                      <div class="flexcolbox2" style="width: 70vw;"><div><h2>Grocery List</h2></div><input id="todoTextInput" placeholder="Get those groceries done!" />
+                      <div id="root"></div>    
+                        </div>
+                      </div>
+                    </div>
+                 <div class="footer">❤️ #staythefuckhome ❤️</div>
+            </div>
+            <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+            <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+            <script type="module" src="/src/App.js"></script>
+            <script type="module" src="/src/index.js"></script>
+            <script type="module" src="/src/TodoList.js"></script>
+            <script type="module" src="/src/Form.js"></script>
+            <script type="module" src="/src/index.js"></script>
+            <script type="module" src="/src/like_button.js"></script> 
+            <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>       
+         </body>
+     </html>
 
